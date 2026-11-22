@@ -335,5 +335,31 @@
       1.4501066634012414,
       157.98814788075686
     ]
+  },
+  "triage": {
+    "low": 0.1456,
+    "high": 0.5,
+    "n_train": 800,
+    "method": "5-fold out-of-fold predictions on the training set",
+    "stats": {
+      "HIGH": {
+        "claims": 271,
+        "share": 0.3387,
+        "fraud_rate": 0.6531,
+        "share_of_all_fraud": 0.8939
+      },
+      "MEDIUM": {
+        "claims": 328,
+        "share": 0.41,
+        "fraud_rate": 0.0335,
+        "share_of_all_fraud": 0.0556
+      },
+      "LOW": {
+        "claims": 201,
+        "share": 0.2512,
+        "fraud_rate": 0.0498,
+        "share_of_all_fraud": 0.0505
+      }
+    }
   }
 }

@@ -30,11 +30,22 @@ def clean(df):
     return df
 
 
+def parse_dates(s):
+    """The Kaggle file stores dates as dd-mm-yyyy; the app sends ISO yyyy-mm-dd.
+    Parse with explicit formats so ambiguous dates (e.g. 05-01-2015) are never guessed wrongly."""
+    s = s.astype(str).str.strip()
+    out = pd.to_datetime(s, format="%d-%m-%Y", errors="coerce")
+    rest = out.isna()
+    if rest.any():
+        out[rest] = pd.to_datetime(s[rest], format="%Y-%m-%d", errors="coerce")
+    return out
+
+
 def add_engineered(df):
     """Create new features from dates and amounts, then drop the raw dates."""
     df = df.copy()
-    bind = pd.to_datetime(df["policy_bind_date"], errors="coerce")
-    inc = pd.to_datetime(df["incident_date"], errors="coerce")
+    bind = parse_dates(df["policy_bind_date"])
+    inc = parse_dates(df["incident_date"])
     df["policy_age_days"] = (inc - bind).dt.days
     df["incident_month"] = inc.dt.month
     df["incident_dayofweek"] = inc.dt.dayofweek
