@@ -1,0 +1,12 @@
+{
+  "name": "Gradient Boosting",
+  "nested_f1": [
+    0.7557070756490176,
+    0.03214987315814243
+  ],
+  "params": {
+    "clf__learning_rate": 0.03,
+    "clf__max_depth": 3,
+    "clf__max_iter": 100
+  }
+}

@@ -1,0 +1,3 @@
+Set,Rows,Fraud,Fraud %
+Train,800,198,24.8%
+Test,200,49,24.5%

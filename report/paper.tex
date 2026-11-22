@@ -1,0 +1,78 @@
+% IEEE conference paper skeleton (3-6 pages). Compile on Overleaf: upload this file + the
+% report/tables and results/figures folders (or fix the paths below).
+% IMPORTANT: replace every [TODO] with YOUR OWN words. The rubric penalises unedited AI text.
+\documentclass[conference]{IEEEtran}
+\usepackage{booktabs, graphicx, cite, amsmath}
+\graphicspath{{../results/figures/}}
+
+\begin{document}
+\title{Insurance Claim Fraud Detection Using Machine Learning with Nested Cross-Validation}
+\author{\IEEEauthorblockN{Bhoomi Tiple}
+\IEEEauthorblockA{Department of Software Engineering\\MIT Academy of Engineering, Alandi (D), Pune, India}}
+\maketitle
+
+\begin{abstract}
+% 150-250 words: [problem] -> [objective] -> [method] -> [main numeric result].
+[TODO]
+\end{abstract}
+\begin{IEEEkeywords}
+insurance fraud, machine learning, class imbalance, nested cross-validation, explainability
+\end{IEEEkeywords}
+
+\section{Introduction}
+% Why insurance fraud matters; why it is hard (few fraud cases); your objective; your contributions (list 2-3).
+[TODO]
+
+\section{Related Work}
+% Review 10-15 papers from the last 5 years. Group them (e.g. classical ML, ensemble/boosting,
+% imbalance handling, deep learning). End with the RESEARCH GAP and what you contribute.
+[TODO] \cite{ref1}
+
+% Literature table (one row per paper):
+% Ref | Year | Dataset | Method | Key result | Limitation
+
+\section{Methodology}
+\subsection{Dataset}
+% Source, number of claims, number of features, fraud percentage (see results/tables/eda_summary.csv,
+% split_summary.csv and figure 01_class_balance).
+[TODO]
+\subsection{Preprocessing and Pipeline}
+% Dropped ID columns, '?' treated as missing, engineered features (policy age, month, weekday,
+% claim-to-premium ratio), median / 'Missing' imputation, scaling, one-hot encoding -- all inside a Pipeline.
+[TODO]
+\subsection{Models, Imbalance Handling and Validation}
+% Dummy baseline, Logistic Regression, Random Forest, Gradient Boosting, SVM; class weighting;
+% stratified 80/20 split (seed 42); 5x3 repeated stratified CV; GridSearchCV inside 5x3 nested CV;
+% test set used once. Insert a block diagram of the pipeline here.
+[TODO]
+
+\section{Results and Discussion}
+\subsection{Model comparison}
+\begin{table}[t]\centering\caption{Repeated stratified CV results (mean $\pm$ std).}\label{tab:base}
+\resizebox{\columnwidth}{!}{\input{tables/baseline_cv.tex}}\end{table}
+\begin{table}[t]\centering\caption{Nested CV results after tuning.}\label{tab:nested}
+\resizebox{\columnwidth}{!}{\input{tables/nested_cv_tuned.tex}}\end{table}
+\subsection{Ablation study}
+\begin{table}[t]\centering\caption{Ablation: effect of removing one component.}\label{tab:abl}
+\resizebox{\columnwidth}{!}{\input{tables/ablation.tex}}\end{table}
+\subsection{Test-set performance and error analysis}
+\begin{table}[t]\centering\caption{Final held-out test metrics.}\label{tab:test}
+\resizebox{\columnwidth}{!}{\input{tables/test_metrics.tex}}\end{table}
+\begin{figure}[t]\centering\includegraphics[width=\columnwidth]{09_roc_pr_curves.png}
+\caption{ROC and precision-recall curves on the test set.}\end{figure}
+\begin{figure}[t]\centering\includegraphics[width=0.7\columnwidth]{08_confusion_matrix.png}
+\caption{Confusion matrix on the test set.}\end{figure}
+\begin{figure}[t]\centering\includegraphics[width=\columnwidth]{10_feature_importance.png}
+\caption{Permutation feature importance.}\end{figure}
+% Discuss: which model won and why; what the ablation shows; which frauds were missed; honest limitations
+% (small dataset, one source, public data, no cost-sensitive analysis, threshold fixed at 0.5).
+[TODO]
+
+\section{Conclusion and Future Work}
+[TODO]
+
+\begin{thebibliography}{00}
+% 15-25 IEEE-style references, each cited in the text. Example format:
+\bibitem{ref1} A. Author, B. Author, ``Title of paper,'' \textit{Journal Name}, vol. X, no. Y, pp. 1--10, 2023.
+\end{thebibliography}
+\end{document}

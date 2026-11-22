@@ -1,0 +1,39 @@
+Column,Type,Missing,Missing %,Unique,Example
+months_as_customer,int64,0,0.0,360,441
+age,int64,0,0.0,45,55
+policy_state,str,0,0.0,3,IN
+policy_csl,str,0,0.0,3,250/500
+policy_deductable,int64,0,0.0,3,500
+policy_annual_premium,float64,0,0.0,793,1270.29
+umbrella_limit,int64,0,0.0,11,4000000
+insured_sex,str,0,0.0,2,MALE
+insured_education_level,str,0,0.0,7,College
+insured_occupation,str,0,0.0,14,armed-forces
+insured_hobbies,str,0,0.0,20,exercise
+insured_relationship,str,0,0.0,6,husband
+capital-gains,int64,0,0.0,285,24000
+capital-loss,int64,0,0.0,305,-50500
+incident_type,str,0,0.0,4,Parked Car
+collision_type,str,152,19.0,3,Side Collision
+incident_severity,str,0,0.0,4,Minor Damage
+authorities_contacted,str,82,10.2,4,Ambulance
+incident_state,str,0,0.0,7,VA
+incident_city,str,0,0.0,7,Arlington
+incident_hour_of_the_day,int64,0,0.0,24,4
+number_of_vehicles_involved,int64,0,0.0,4,1
+property_damage,str,286,35.8,2,NO
+bodily_injuries,int64,0,0.0,3,0
+witnesses,int64,0,0.0,4,0
+police_report_available,str,268,33.5,2,NO
+total_claim_amount,int64,0,0.0,639,6400
+injury_claim,int64,0,0.0,552,640
+property_claim,int64,0,0.0,540,640
+vehicle_claim,int64,0,0.0,618,5120
+auto_make,str,0,0.0,14,Honda
+auto_model,str,0,0.0,39,Civic
+auto_year,int64,0,0.0,21,2002
+policy_age_days,int64,0,0.0,773,2031
+incident_month,int32,0,0.0,3,2
+incident_dayofweek,int32,0,0.0,7,3
+claim_per_premium,float64,0,0.0,800,5.038219619142086
+fraud_reported,int64,0,0.0,2,0

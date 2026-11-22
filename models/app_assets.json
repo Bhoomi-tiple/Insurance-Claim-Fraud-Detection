@@ -1,0 +1,339 @@
+{
+  "columns": [
+    "months_as_customer",
+    "age",
+    "policy_state",
+    "policy_csl",
+    "policy_deductable",
+    "policy_annual_premium",
+    "umbrella_limit",
+    "insured_sex",
+    "insured_education_level",
+    "insured_occupation",
+    "insured_hobbies",
+    "insured_relationship",
+    "capital-gains",
+    "capital-loss",
+    "incident_type",
+    "collision_type",
+    "incident_severity",
+    "authorities_contacted",
+    "incident_state",
+    "incident_city",
+    "incident_hour_of_the_day",
+    "number_of_vehicles_involved",
+    "property_damage",
+    "bodily_injuries",
+    "witnesses",
+    "police_report_available",
+    "total_claim_amount",
+    "injury_claim",
+    "property_claim",
+    "vehicle_claim",
+    "auto_make",
+    "auto_model",
+    "auto_year",
+    "policy_age_days",
+    "incident_month",
+    "incident_dayofweek",
+    "claim_per_premium"
+  ],
+  "defaults": {
+    "months_as_customer": 202.0,
+    "age": 38.5,
+    "policy_deductable": 1000.0,
+    "policy_annual_premium": 1265.78,
+    "umbrella_limit": 0.0,
+    "capital-gains": 0.0,
+    "capital-loss": -21200.0,
+    "incident_hour_of_the_day": 12.0,
+    "number_of_vehicles_involved": 1.0,
+    "bodily_injuries": 1.0,
+    "witnesses": 1.0,
+    "total_claim_amount": 57700.0,
+    "injury_claim": 6675.0,
+    "property_claim": 6700.0,
+    "vehicle_claim": 41760.0,
+    "auto_year": 2005.0,
+    "policy_age_days": 4737.0,
+    "incident_month": 1.0,
+    "incident_dayofweek": 3.0,
+    "claim_per_premium": 44.6345078229676,
+    "policy_state": "OH",
+    "policy_csl": "250/500",
+    "insured_sex": "FEMALE",
+    "insured_education_level": "JD",
+    "insured_occupation": "machine-op-inspct",
+    "insured_hobbies": "reading",
+    "insured_relationship": "other-relative",
+    "incident_type": "Multi-vehicle Collision",
+    "collision_type": "Rear Collision",
+    "incident_severity": "Minor Damage",
+    "authorities_contacted": "Police",
+    "incident_state": "NY",
+    "incident_city": "Springfield",
+    "property_damage": "NO",
+    "police_report_available": "NO",
+    "auto_make": "Suburu",
+    "auto_model": "Wrangler"
+  },
+  "options": {
+    "policy_state": [
+      "IL",
+      "IN",
+      "OH"
+    ],
+    "policy_csl": [
+      "100/300",
+      "250/500",
+      "500/1000"
+    ],
+    "insured_sex": [
+      "FEMALE",
+      "MALE"
+    ],
+    "insured_education_level": [
+      "Associate",
+      "College",
+      "High School",
+      "JD",
+      "MD",
+      "Masters",
+      "PhD"
+    ],
+    "insured_occupation": [
+      "adm-clerical",
+      "armed-forces",
+      "craft-repair",
+      "exec-managerial",
+      "farming-fishing",
+      "handlers-cleaners",
+      "machine-op-inspct",
+      "other-service",
+      "priv-house-serv",
+      "prof-specialty",
+      "protective-serv",
+      "sales",
+      "tech-support",
+      "transport-moving"
+    ],
+    "insured_hobbies": [
+      "base-jumping",
+      "basketball",
+      "board-games",
+      "bungie-jumping",
+      "camping",
+      "chess",
+      "cross-fit",
+      "dancing",
+      "exercise",
+      "golf",
+      "hiking",
+      "kayaking",
+      "movies",
+      "paintball",
+      "polo",
+      "reading",
+      "skydiving",
+      "sleeping",
+      "video-games",
+      "yachting"
+    ],
+    "insured_relationship": [
+      "husband",
+      "not-in-family",
+      "other-relative",
+      "own-child",
+      "unmarried",
+      "wife"
+    ],
+    "incident_type": [
+      "Multi-vehicle Collision",
+      "Parked Car",
+      "Single Vehicle Collision",
+      "Vehicle Theft"
+    ],
+    "collision_type": [
+      "Front Collision",
+      "Rear Collision",
+      "Side Collision"
+    ],
+    "incident_severity": [
+      "Major Damage",
+      "Minor Damage",
+      "Total Loss",
+      "Trivial Damage"
+    ],
+    "authorities_contacted": [
+      "Ambulance",
+      "Fire",
+      "Other",
+      "Police"
+    ],
+    "incident_state": [
+      "NC",
+      "NY",
+      "OH",
+      "PA",
+      "SC",
+      "VA",
+      "WV"
+    ],
+    "incident_city": [
+      "Arlington",
+      "Columbus",
+      "Hillsdale",
+      "Northbend",
+      "Northbrook",
+      "Riverwood",
+      "Springfield"
+    ],
+    "property_damage": [
+      "NO",
+      "YES"
+    ],
+    "police_report_available": [
+      "NO",
+      "YES"
+    ],
+    "auto_make": [
+      "Accura",
+      "Audi",
+      "BMW",
+      "Chevrolet",
+      "Dodge",
+      "Ford",
+      "Honda",
+      "Jeep",
+      "Mercedes",
+      "Nissan",
+      "Saab",
+      "Suburu",
+      "Toyota",
+      "Volkswagen"
+    ],
+    "auto_model": [
+      "3 Series",
+      "92x",
+      "93",
+      "95",
+      "A3",
+      "A5",
+      "Accord",
+      "C300",
+      "CRV",
+      "Camry",
+      "Civic",
+      "Corolla",
+      "E400",
+      "Escape",
+      "F150",
+      "Forrestor",
+      "Fusion",
+      "Grand Cherokee",
+      "Highlander",
+      "Impreza",
+      "Jetta",
+      "Legacy",
+      "M5",
+      "MDX",
+      "ML350",
+      "Malibu",
+      "Maxima",
+      "Neon",
+      "Passat",
+      "Pathfinder",
+      "RAM",
+      "RSX",
+      "Silverado",
+      "TL",
+      "Tahoe",
+      "Ultima",
+      "Wrangler",
+      "X5",
+      "X6"
+    ]
+  },
+  "ranges": {
+    "months_as_customer": [
+      0.0,
+      479.0
+    ],
+    "age": [
+      20.0,
+      64.0
+    ],
+    "policy_deductable": [
+      500.0,
+      2000.0
+    ],
+    "policy_annual_premium": [
+      433.33,
+      2047.59
+    ],
+    "umbrella_limit": [
+      -1000000.0,
+      10000000.0
+    ],
+    "capital-gains": [
+      0.0,
+      100500.0
+    ],
+    "capital-loss": [
+      -111100.0,
+      0.0
+    ],
+    "incident_hour_of_the_day": [
+      0.0,
+      23.0
+    ],
+    "number_of_vehicles_involved": [
+      1.0,
+      4.0
+    ],
+    "bodily_injuries": [
+      0.0,
+      2.0
+    ],
+    "witnesses": [
+      0.0,
+      3.0
+    ],
+    "total_claim_amount": [
+      1920.0,
+      114920.0
+    ],
+    "injury_claim": [
+      0.0,
+      21450.0
+    ],
+    "property_claim": [
+      0.0,
+      23670.0
+    ],
+    "vehicle_claim": [
+      1440.0,
+      79560.0
+    ],
+    "auto_year": [
+      1995.0,
+      2015.0
+    ],
+    "policy_age_days": [
+      -20.0,
+      9172.0
+    ],
+    "incident_month": [
+      1.0,
+      3.0
+    ],
+    "incident_dayofweek": [
+      0.0,
+      6.0
+    ],
+    "claim_per_premium": [
+      1.4501066634012414,
+      157.98814788075686
+    ]
+  }
+}
